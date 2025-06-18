@@ -5,7 +5,7 @@
 
 一个基于 AI 的 Git 预提交代码审查工具，用于提高代码质量。
 
-[English](README.md), [简体中文](README_CN.md)
+[English](README.md)｜[简体中文](README_CN.md)
 
 ## 概述
 
@@ -133,16 +133,6 @@ pnpm build
 # 运行测试
 pnpm test
 ```
-
-## 贡献
-
-欢迎任何形式的贡献！请随时提交 Pull Request。
-
-1. Fork 仓库
-2. 创建你的特性分支 (`git checkout -b feature/amazing-feature`)
-3. 提交你的更改 (`git commit -m 'Add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 打开一个 Pull Request
 
 ## 许可证
 
