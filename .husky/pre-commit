@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# 中断本次提交
+# echo "Found stop_commit.txt, aborting commit!"
+# exit 1  # 非零退出码，中断提交
