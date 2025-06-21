@@ -4,13 +4,11 @@ import { generatePrompt } from './prompt';
 import chalk from 'chalk';
 import { Config } from '../core/config';
 
-let openInstance: OpenAI;
 const getOpenAIInstance = (baseURL: string, apiKey: string) => {
-  openInstance = new OpenAI({
+  return new OpenAI({
     baseURL,
     apiKey,
   });
-  return openInstance;
 };
 
 /**

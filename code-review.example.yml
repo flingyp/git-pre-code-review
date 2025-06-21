@@ -1,13 +1,13 @@
+# LLM 配置
+LLM:
+  BASE_URL: 'your-llm-base-url'
+  API_KEY: 'your-llm-api-key'
+
 # 忽略的文件或目录
 ignore:
   - 'node_modules'
   - 'dist'
   - '*.log'
-
-# LLM 配置
-LLM:
-  BASE_URL: 'your-llm-base-url'
-  API_KEY: 'your-llm-api-key'
 
 # 自定义命令（可选）
 # 在代码提交前执行的命令，例如代码检查、格式化等
