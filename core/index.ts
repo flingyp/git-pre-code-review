@@ -89,7 +89,7 @@ async function init() {
         type: 'input',
         name: 'message',
         message: chalk.blue('📝 请输入提交信息:'),
-        default: 'code review',
+        default: '',
         validate: (input) => {
           if (input.trim() === '') {
             return '提交信息不能为空';

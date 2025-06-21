@@ -7,10 +7,3 @@ import path from 'path';
 export function getFilePath(filename: string): string {
   return path.resolve(process.cwd(), filename);
 }
-
-/**
- * 获取文件扩展名
- */
-export function getFileExtension(filePath: string): string {
-  return path.extname(filePath).toLowerCase().slice(1);
-}

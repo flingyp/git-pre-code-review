@@ -14,7 +14,10 @@ const packageJson = JSON.parse(readFileSync(join(__dirname, '../package.json'), 
 
 const program = new Command();
 
-program.name('gpcr').description('Git Pre-commit Code Review CLI').version(packageJson.version);
+program
+  .name('gpcr')
+  .description('An AI-based Git pre-commit code review tool to enhance code quality before human review.')
+  .version(packageJson.version, '-v, --version', 'show version number');
 
 program
   .command('review')

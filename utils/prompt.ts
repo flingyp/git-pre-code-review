@@ -1,6 +1,6 @@
 import { getGitStagedFileDiff, GitStagedFile } from './git';
 import { Config } from '../core/config';
-import { getFileExtension } from './path';
+import { useGetExtensionName } from '@flypeng/tool/node';
 
 /**
  * 获取文件类型分类
@@ -76,7 +76,7 @@ export async function generatePrompt(files: GitStagedFile[], config: Config): Pr
   // 获取每个文件的变更内容
   for (const file of files) {
     const diffContent = await getGitStagedFileDiff(file.path);
-    const extension = getFileExtension(file.path);
+    const extension = useGetExtensionName(file.path);
     const fileType = getFileTypeCategory(extension);
 
     // 添加文件信息
